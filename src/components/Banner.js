@@ -5,6 +5,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Banner.css'
+import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -57,9 +58,9 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Meet Sparsh! <span class="wave">👋</span></span>
-                <h1>{`I'm A `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Dreamer", "Creator" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`I'm A `} <span className="txt-rotate" dataPeriod="100" data-rotate='[]'><span className="wrap">{text}</span></span></h1>
                 
-                  <button onClick={() => console.log('connect')}>Welcome to my little space in the metaverse <ArrowRightCircle size={25} /></button>
+                  <h4>Welcome to my little space in the metaverse </h4>
               </div>}
             </TrackVisibility>
           </Col>
