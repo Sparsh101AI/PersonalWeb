@@ -13,14 +13,18 @@ export const Banner = () => {
   const [, setIndex] = useState(1);
   const toRotate = [ "Dreamer", "Creator", "Developer" ];
   const period = 1000;
+  
 
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
-    }, delta);
+    }, delta, tick);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+
+}, 
+// eslint-disable-next-line react-hooks/exhaustive-deps
+[text,delta])
 
   const tick = () => {
     let i = loopNum % toRotate.length;
