@@ -19,7 +19,7 @@ export const Footer = () => {
               <a href="https://github.com/Sparsh101AI"><img src={navIcon2} alt="Icon" /></a>
               <a href="https://www.instagram.com/_sparsh.patel_/"><img src={navIcon3} alt="Icon" /></a>
             </div>
-            <p>Thank you for attention</p>
+            <p>Thank you for attention!</p>
           </Col>
         </Row>
       </Container>
