@@ -37,35 +37,35 @@ export const Skills = () => {
                         <p>Just a little overview...</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div >
-                                <img src={meter3}  />
+                                <img src={meter3}  alt=""/>
                                 <h5>C++ / C</h5>
                             </div>
                             <div >
-                                <img src={meter2}  />
+                                <img src={meter2} alt="" />
                                 <h5>Python</h5>
                             </div>
                             <div >
-                                <img src={meter3}  />
+                                <img src={meter3}  alt=""/>
                                 <h5>AR Core</h5>
                             </div>
                             <div >
-                                <img src={meter1}  />
+                                <img src={meter1} alt="" />
                                 <h5>UI / UX</h5>
                             </div>
                             <div >
-                                <img src={meter2} />
+                                <img src={meter2}alt="" />
                                 <h5> Javascript</h5>
                             </div>
                             <div >
-                                <img src={meter3}  />
+                                <img src={meter3} alt="" />
                                 <h5> Teamwork</h5>
                             </div>
                             <div >
-                                <img src={meter1}  />
+                                <img src={meter1} alt="" />
                                 <h5> Work Ethic</h5>
                             </div>
                             <div >
-                                <img src={meter3}  />
+                                <img src={meter3} alt="" />
                                 <h5>Adaptibility</h5>
                             </div>
                         </Carousel>
