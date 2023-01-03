@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+
+import { SocialIcon } from 'react-social-icons';
+
 
 export const Footer = () => {
   return (
@@ -15,11 +15,14 @@ export const Footer = () => {
 
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/sparsh-patel-54762b186/"><img src={navIcon1} alt="Icon" /></a>
-              <a href="https://github.com/Sparsh101AI"><img src={navIcon2} alt="Icon" /></a>
-              <a href="https://www.instagram.com/_sparsh.patel_/"><img src={navIcon3} alt="Icon" /></a>
+
+              <SocialIcon url="https://www.linkedin.com/in/sparsh-patel-54762b186/" network="linkedin" bgColor="#962ece80" fgColor="#ffffff"/>
+              <SocialIcon url="https://www.instagram.com/_sparsh.patel_/" network="instagram" bgColor="#962ece80" fgColor="#ffffff"/>
+              <SocialIcon url="https://github.com/Sparsh101AI" network="github" bgColor="#962ece80" fgColor="#ffffff"/>
+              <SocialIcon url="https://twitter.com/sparshp40310320?lang=en" network="twitter"  bgColor="#962ece80" fgColor="#ffffff"/>
+
             </div>
-            <p>Thank you for attention!</p>
+            <p>Shoot me an email: Sparshpatel6165@gmail.com</p>
           </Col>
         </Row>
       </Container>
