@@ -59,7 +59,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Meet Sparsh! <span class="wave">👋</span></span>
+                <span className="tagline">Meet Sparsh!! <span class="wave">👋</span></span>
                 <h1>{`I'm A `} <span className="txt-rotate" dataPeriod="100" data-rotate='[]'><span className="wrap">{text}</span></span></h1>
                 
                   <h4>Welcome to my little space in the metaverse... </h4>
