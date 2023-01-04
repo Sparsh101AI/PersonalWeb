@@ -1,0 +1,250 @@
+import { Container } from "react-bootstrap";
+import 'animate.css';
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import ScienceIcon from '@mui/icons-material/Science';
+import SchoolIcon from '@mui/icons-material/School';
+import WorkIcon from '@mui/icons-material/Work';
+import Typography from '@mui/material/Typography';
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';import './myjourney.css'
+
+export const Myjourney = () => {
+  
+
+
+  
+
+ 
+
+  return (
+    <section className="timeline" id="timeline">
+      <Container >
+      <h2 className="myjourney">My Journey</h2>
+      
+      <Timeline position="alternate">
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+          March 2th - June 22th, 2021
+        </TimelineOppositeContent>
+
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <WorkIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          COH Internship
+          </Typography>
+          <Typography>Worked alongside a team of indivudals to imrpove both the backend/frontend of the website.
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+        August 12th, 2021
+        </TimelineOppositeContent>
+
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="secondary">
+            <ScienceIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          INSPO North Continental Research and Innovation Fair
+          </Typography>
+          <Typography>Invited to INSPO based of virutal Canada Wide Science Fiar results for my brainwave detection project.
+            I was named as the top 100 youth innovators across North America out of the 700+ particpians! Recivened one of two SHAD scholarships for Canadians and a TKS scholarships, along with schloarshipts to NYC and RIT. </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+November 11th, 2022 </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" variant="outlined">
+            <PrecisionManufacturingIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+           Ranked Top 4 In Vex Canada Skills
+          
+          </Typography>
+          <Typography> Won the Wood Buffalo Vex Regional Championships and won the skills award. As this was the last game of the year, our skills ranking was 4th in Canada</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+      <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+          March 12th, 2022
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineDot color="secondary">
+            <SchoolIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          University Accpetence
+          </Typography>
+          <Typography>Accpeted into the University of Waterloo's Software Engineering program</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+May 5th-8th, 2022 </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" variant="outlined">
+            <PrecisionManufacturingIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+           Vex World Championships
+          
+          </Typography>
+          <Typography>Had the chance to participate in the biggest robotoics competition in the world in Dallas, Texas.
+            Participated and finished high in the innovate division. Connected with indivudals from the USA, UK, France, Japan, South Korea and many more!</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+          May 17th-19th, 2022
+        </TimelineOppositeContent>
+
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="secondary">
+            <ScienceIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          Canada Wide Science Fair
+          </Typography>
+          <Typography>Awarded Top 4 innovate projects at the fair alongside a senior silver medal, innvation to York Universities 2023 Summer Exclusive Tect Event and numerous scholarships for my project FOUCS.</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+      <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+          June 29th, 2022
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" variant="outlined">
+            <SchoolIcon />
+          </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            Highschool Graduation
+          </Typography>
+          <Typography>12 years of education passed by, however there is still more left. Said my goodbyes, however most of my likeminded friends are also attending the same University.</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+          July 5th - August 25th, 2022
+        </TimelineOppositeContent>
+
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="secondary">
+            <WorkIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          UofA Software Development Internship
+          </Typography>
+          <Typography>Spent my summer working at the University of Alberta Under Professor Paul Lu and his team to develop a visually playable spinoff game from the famous word game
+            wordle.
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+          September 8th, 2022
+        </TimelineOppositeContent>
+
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="secondary">
+            <SchoolIcon color="primary" variant="outlined"/>
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          Started my first Term At the University Of Waterloo
+          </Typography>
+          <Typography>Tough! I found it difficult, but overtime I learned good management and
+            orgnaizational skills. Also met a motivated cohort of indivudals in Software Eng and CS!
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
+
+      </Container>
+    </section>
+  )
+}

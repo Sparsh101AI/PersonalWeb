@@ -1,0 +1,13 @@
+.myjourney{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold !important; 
+    font-size: 75%; 
+
+}
+.timeline {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    padding: 60px 0 200px 0;
+    
+  }
