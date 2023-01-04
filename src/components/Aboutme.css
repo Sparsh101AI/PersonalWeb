@@ -1,0 +1,15 @@
+.title{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.titleundertext1{
+    font-size: large !important; 
+    
+}
+.waterloo{
+    font-size: large !important;
+    font-weight: bold !important; 
+
+    color: rgb(0, 0, 0);
+}
