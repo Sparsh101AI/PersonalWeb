@@ -93,10 +93,10 @@ November 11th, 2022 </TimelineOppositeContent>
 
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-           Ranked Top 4 In Vex Canada Skills
+        Vex Canada Skills
           
           </Typography>
-          <Typography> Won the Wood Buffalo Vex Regional Championships and won the skills award. As this was the last game of the year, our skills ranking was 4th in Canada</Typography>
+          <Typography> Ranked top 4 in Canada for Vex robotics skills based of our skills score. Won the Wood Buffalo Vex Regional Championships and won the skills award.</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
