@@ -93,7 +93,7 @@ November 11th, 2022 </TimelineOppositeContent>
 
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-        Vex Canada Skills
+        Vex Skills Canada
           
           </Typography>
           <Typography> Ranked top 4 in Canada for Vex robotics skills based of our skills score. Won the Wood Buffalo Vex Regional Championships and won the skills award.</Typography>
