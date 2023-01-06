@@ -45,7 +45,7 @@ export const Myjourney = () => {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-          COH Internship
+          Centre Of Hope Internship
           </Typography>
           <Typography>Worked alongside a team of indivudals to imrpove both the backend/frontend of the website.
           </Typography>
