@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <Container>
 
         <Row className="align-items-center">
