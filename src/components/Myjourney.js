@@ -11,7 +11,8 @@ import ScienceIcon from '@mui/icons-material/Science';
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import Typography from '@mui/material/Typography';
-import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';import './myjourney.css'
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import './myjourney.css'
 
 export const Myjourney = () => {
   
@@ -33,6 +34,28 @@ export const Myjourney = () => {
           variant="body2"
           color="text.secondary"
         >
+        May 19th, 2020
+        </TimelineOppositeContent>
+
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="secondary">
+            <ScienceIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+Canada Wide Science Fair          </Typography>
+          <Typography> Recieved ribbon for best project in my region.</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
           March 2th - June 22th, 2021
         </TimelineOppositeContent>
 
@@ -45,7 +68,7 @@ export const Myjourney = () => {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-          Centre Of Hope Internship
+          Centre Of Hope Full Stack Internship 
           </Typography>
           <Typography>Worked alongside a team of indivudals to imrpove both the backend/frontend of the website.
           </Typography>
@@ -108,7 +131,7 @@ November 11th, 2022 </TimelineOppositeContent>
           March 12th, 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineConnector />
           <TimelineDot color="secondary">
             <SchoolIcon />
           </TimelineDot>
@@ -228,10 +251,10 @@ May 5th-8th, 2022 </TimelineOppositeContent>
 
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="secondary">
-            <SchoolIcon color="primary" variant="outlined"/>
+          <TimelineDot color="primary" variant="outlined">
+            <SchoolIcon />
           </TimelineDot>
-          <TimelineConnector />
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
