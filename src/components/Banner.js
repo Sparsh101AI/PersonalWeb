@@ -62,7 +62,7 @@ export const Banner = () => {
                 <span className="tagline">Meet Sparsh <span class="wave">👋</span></span>
                 <h1>{`I'm A `} <span className="txt-rotate" dataPeriod="100" data-rotate='[]'><span className="wrap">{text}</span></span></h1>
                 
-                  <h4>Welcome to my little space in the metaverse... </h4>
+                  <h4>Welcome to my little corner in the metaverse... </h4>
               </div>}
             </TrackVisibility>
           </Col>

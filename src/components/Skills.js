@@ -50,6 +50,10 @@ export const Skills = () => {
                             </div>
                             <div >
                                 <img src={meter1} alt="" />
+                                <h5>Autodesk & Fusion 360</h5>
+                            </div>
+                            <div >
+                                <img src={meter1} alt="" />
                                 <h5>UI / UX</h5>
                             </div>
                             <div >

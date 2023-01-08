@@ -23,7 +23,7 @@ export const Aboutme = () => {
     <br/>
     <p className="titleundertext1" >  Colaboarting and developing at the: <text className="waterloo">Centre of Hope</text></p> 
     <br/>
-    <p className="titleundertext1" >  Creating something interesting with: <text className="waterloo">AR/XR</text></p> 
+    <p className="titleundertext1" >  Creating something interesting with: <text className="waterloo">AR/XR and Robots</text></p> 
     </Container>
       
     </section>

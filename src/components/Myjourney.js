@@ -46,8 +46,10 @@ export const Myjourney = () => {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-Canada Wide Science Fair          </Typography>
-          <Typography> Recieved ribbon for best project in my region.</Typography>
+          Canada Wide Science Fair          </Typography>
+          <Typography> Recieved a ribbon for being best project in my region. The goal of the
+            project was to create an AI powered clean energy prevention tool uzing piezoelectric sensors and wind!
+          </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -70,7 +72,7 @@ Canada Wide Science Fair          </Typography>
           <Typography variant="h6" component="span">
           Centre Of Hope Full Stack Internship 
           </Typography>
-          <Typography>Worked alongside a team of indivudals to imrpove both the backend/frontend of the website.
+          <Typography>Led a team of 4 indivudals to imrpove both the backend/frontend of the website using React Js.
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -95,7 +97,7 @@ Canada Wide Science Fair          </Typography>
           INSPO North Continental Research and Innovation Fair
           </Typography>
           <Typography>Invited to INSPO based of virutal Canada Wide Science Fiar results for my brainwave detection project.
-            I was named as the top 100 youth innovators across North America out of the 700+ particpians! Recivened one of two SHAD scholarships for Canadians and a TKS scholarships, along with schloarshipts to NYC and RIT. </Typography>
+            I was named as the top 100 youth innovators across North America out of the 700+ participants! Also Recieved one of two SHAD scholarships for Canadians and a TKS scholarships, along with schloarshipts to NYC and RIT. </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
