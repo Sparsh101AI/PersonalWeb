@@ -22,8 +22,8 @@ export const Footer = () => {
               <SocialIcon url="https://twitter.com/sparshp40310320?lang=en" network="twitter"  bgColor="#962ece80" fgColor="#ffffff"/>
 
             </div>
-            <p>Shoot me an email: Sparshpatel6165@gmail.com</p>
-          </Col>
+            <p>Shoot me an email: Sparshpatel6165@gmail.com</p> 
+          </Col> 
         </Row>
       </Container>
     </footer>

@@ -4,7 +4,6 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
@@ -49,7 +48,7 @@ export const NavBar = () => {
             
 
               <HashLink to='#footer'>
-                <button className="vvd"><span> Let's Connect</span></button>
+                <button className="vvd"><span> Let's Connect!</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>

@@ -208,7 +208,7 @@ May 5th-8th, 2022 </TimelineOppositeContent>
           <TimelineDot color="primary" variant="outlined">
             <SchoolIcon />
           </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
@@ -248,7 +248,7 @@ May 5th-8th, 2022 </TimelineOppositeContent>
           variant="body2"
           color="text.secondary"
         >
-          September 8th, 2022
+          September 8th - December 17th, 2022
         </TimelineOppositeContent>
 
         <TimelineSeparator>
@@ -260,7 +260,7 @@ May 5th-8th, 2022 </TimelineOppositeContent>
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-          Started my first Term At the University Of Waterloo
+          My first Term At the University Of Waterloo
           </Typography>
           <Typography>Tough! I found it difficult, but overtime I learned good management and
             orgnaizational skills. Also met a motivated cohort of indivudals in Software Eng and CS!
