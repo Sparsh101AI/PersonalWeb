@@ -36,8 +36,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-//////////////////
--Things to add:
- - add a quotes sectino
- - add a timeline
- - add projects 
