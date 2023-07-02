@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner />
+      <Banner /> //change banner
       <Aboutme/>
       <Skills />
       <Projects />
