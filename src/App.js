@@ -13,6 +13,7 @@ function App() {
       <NavBar />
       <Banner /> //change banner
       <Aboutme/>
+    <adder/>
       <Skills />
       <Projects />
       <Myjourney />
