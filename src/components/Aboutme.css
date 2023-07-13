@@ -1,15 +1,24 @@
-.title{
+.title {
     font-weight: bold;
     font-size: x-large;
+
 }
 
-.titleundertext1{
-    font-size: large !important; 
-    
-}
-.waterloo{
+.titleundertext1 {
     font-size: large !important;
-    font-weight: bold !important; 
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+
+}
+
+.waterloo {
+    font-size: large !important;
+    font-weight: bold !important;
 
     color: rgb(0, 0, 0);
+}
+
+.backgroundaboutme {
+    background: linear-gradient(#131862, #2e4482);
+    padding: 60px 0 200px 0;
+
 }

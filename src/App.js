@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner /> 
-      <Aboutme/>
-   
+      <Banner />
+      <Aboutme />
+
       <Skills />
       <Projects />
       <Myjourney />

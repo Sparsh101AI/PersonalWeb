@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [, setIndex] = useState(1);
-  const toRotate = ["Street", "Dreams", ""];
+  const toRotate = [" Dreaming", "  Tinkiering", "  Developing"];
   const period = 1000;
 
 
@@ -60,6 +60,7 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline"> I'm Sparsh <span class="wave">👋</span></span>
+                  {/* <h1>{`Currently `} <span className="txt-rotate" dataPeriod="100" data-rotate='[]'><span className="wrap">{text}</span></span></h1> */}
                   <h2>Welcome to my little street.</h2>
 
                 </div>}
