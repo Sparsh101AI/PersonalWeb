@@ -11,9 +11,9 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [, setIndex] = useState(1);
-  const toRotate = [ "Dreamer", "Creator", "Developer" ];
+  const toRotate = ["Dreamer", "Creator", "Developer"];
   const period = 1000;
-  
+
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -22,9 +22,9 @@ export const Banner = () => {
 
     return () => { clearInterval(ticker) };
 
-}, 
-// eslint-disable-next-line react-hooks/exhaustive-deps
-[text,delta])
+  },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [text, delta])
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -58,19 +58,19 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Meet Sparsh <span class="wave">👋</span></span>
-                <h1>{`I'm A `} <span className="txt-rotate" dataPeriod="100" data-rotate='[]'><span className="wrap">{text}</span></span></h1>
-                
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline"> Sparsh <span class="wave">👋</span></span>
+                  <h1>{`I'm A `} <span className="txt-rotate" dataPeriod="100" data-rotate='[]'><span className="wrap">{text}</span></span></h1>
+
                   <h4>Welcome to my little corner in the metaverse... </h4>
-              </div>}
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" />
                 </div>}
             </TrackVisibility>
           </Col>
