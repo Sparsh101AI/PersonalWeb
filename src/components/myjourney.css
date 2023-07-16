@@ -1,13 +1,40 @@
-.myjourney{
+.myjourney {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-weight: bold !important; 
-    font-size: 75%; 
-
-}
-.timeline {
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    padding: 60px 0 200px 0;
-    
+    font-weight: bold !important;
+    font-size: 75%;
   }
+  
+  .timeline {
+    position: relative;
+    background: #0A2342; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0A2342, #283E51); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0A2342, #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -olinear-gradient(to bottom, #0A2342, #283E51);
+    padding: 60px 0 200px 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @keyframes star-fall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  .star-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Change z-index to -1 */
+    pointer-events: none; /* Add this line */
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    animation: star-fall 10s linear infinite;
+  }
+  

@@ -55,6 +55,7 @@
   display:block;
   background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
   z-index:0;
+  
 }
 
 h3 {
@@ -212,7 +213,7 @@ https://codepen.io/nsayenko/pen/JKzxdm/
   background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
   z-index:0;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 @keyframes animateStars {

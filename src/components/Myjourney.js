@@ -24,7 +24,7 @@ export const Myjourney = () => {
 
   return (
     <section className="timeline" id="timeline">
-      <Container >
+      <Container  className = "stars">
       <h2 className="myjourney">My Journey</h2>
       
       <Timeline position="alternate">
@@ -32,7 +32,7 @@ export const Myjourney = () => {
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+     
         >
         May 19th, 2020
         </TimelineOppositeContent>
@@ -56,7 +56,7 @@ export const Myjourney = () => {
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+         
         >
           March 2th - June 22th, 2021
         </TimelineOppositeContent>
@@ -80,7 +80,7 @@ export const Myjourney = () => {
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          
         >
         August 12th, 2021
         </TimelineOppositeContent>
@@ -105,7 +105,7 @@ export const Myjourney = () => {
           sx={{ m: 'auto 0' }}
           align="right"
           variant="body2"
-          color="text.secondary"
+        
         >
 November 11th, 2022 </TimelineOppositeContent>
         <TimelineSeparator>
@@ -128,7 +128,7 @@ November 11th, 2022 </TimelineOppositeContent>
       <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+         
         >
           March 12th, 2022
         </TimelineOppositeContent>
@@ -151,7 +151,7 @@ November 11th, 2022 </TimelineOppositeContent>
           sx={{ m: 'auto 0' }}
           align="right"
           variant="body2"
-          color="text.secondary"
+    
         >
 May 5th-8th, 2022 </TimelineOppositeContent>
         <TimelineSeparator>
@@ -176,7 +176,7 @@ May 5th-8th, 2022 </TimelineOppositeContent>
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+       
         >
           May 17th-19th, 2022
         </TimelineOppositeContent>
@@ -199,7 +199,7 @@ May 5th-8th, 2022 </TimelineOppositeContent>
       <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          
         >
           June 29th, 2022
         </TimelineOppositeContent>
@@ -221,7 +221,7 @@ May 5th-8th, 2022 </TimelineOppositeContent>
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+         
         >
           July 5th - August 25th, 2022
         </TimelineOppositeContent>
@@ -246,9 +246,9 @@ May 5th-8th, 2022 </TimelineOppositeContent>
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          
         >
-          September 8th - December 17th, 2022
+          September 8th - April 28th, 2022
         </TimelineOppositeContent>
 
         <TimelineSeparator>
@@ -260,14 +260,40 @@ May 5th-8th, 2022 </TimelineOppositeContent>
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-          My first Term At the University Of Waterloo
+          My first year At the University Of Waterloo
           </Typography>
-          <Typography>Tough! I found it difficult, but overtime I learned good management and
-            orgnaizational skills. Also met a motivated cohort of indivudals in Software Eng and CS!
+          <Typography>Tough. I found it difficult, but overtime I learned good management and
+            orgnaizational skills. Met an outstanding group of friends as well!
           </Typography>
         </TimelineContent>
       </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.orim"
+        >
+          May 8th - August 30th, 2023
+        </TimelineOppositeContent>
+
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot >
+            <WorkIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          Momento AI Software Development Internship (Co-op #1)
+          </Typography>
+          <Typography>Spent my summer working at a startup in Califronia buildilng an AI recomendations engine using the OPEN AI API.
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      
     </Timeline>
+    
 
       </Container>
     </section>
