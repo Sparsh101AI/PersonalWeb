@@ -14,12 +14,12 @@ function App() {
       <Banner />
       <Aboutme />
 
-      <Skills />
+<Skills/>
       <Projects />
       <Myjourney />
       <Footer />
     </div>
   );
-}
+} // remove <skills>
 
 export default App;
