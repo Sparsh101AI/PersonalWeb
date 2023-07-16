@@ -12,9 +12,10 @@ export const Aboutme = () => {
        
         <p className="titleundertext1">Meeting new people at the: <span className="waterloo">University of Waterloo 🏫</span></p>
         <br></br>
-        <p className="titleundertext1">Building a community : <span className="waterloo">@StereamD </span></p>
+        <p className="titleundertext1">Building a virtual community : <span className="waterloo">@StereamD 🎥</span></p>
         <br></br>
-        <p className="titleundertext1">Training the next-gen recomendations engine: <span className="waterloo"> @Momento AI 🤖</span></p>
+        
+        <p className="titleundertext1">Training the next-gen recomendations engine: <span className="waterloo"> @Momento AI 🧠</span></p>
       </Container>
     </section>
   )

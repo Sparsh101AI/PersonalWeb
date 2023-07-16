@@ -6,18 +6,19 @@
 
 .titleundertext1 {
     font-size: x-large !important;
-    font-family: 'Rammetto One';
-    text-align: center;
+    font-family: 'Rammetto One' !important;
+    text-align: center !important;
+    
    
 
 }
 
 .waterloo {
     font-size: x-large !important;
-    font-family: 'Rammetto One';
+    font-family: 'Rammetto One' !important;
     font-weight: bold !important;
 
-    color: rgb(205, 195, 82);
+    color: rgb(205, 195, 82) !important;
 }
 
 .backgroundaboutme {
@@ -57,13 +58,13 @@
   
   h3 {
 
-    text-align: center;
+    text-align: center !important;
     font-size: xx-large !important;
-    color: #fff;
-    width: 55%;
-    margin: 5rem auto;
-    line-height: 3rem;
-    letter-spacing: 5px;
+    color: #fff !important;
+    width: 55% !important;
+    margin: 5rem auto !important;
+    line-height: 3rem !important;
+    letter-spacing: 5px !important;
   }
   
   /*****************************************
@@ -171,19 +172,13 @@
 
 
   .title {
-    font-weight: bold;
-    font-size: x-large;
-  }
-  
-  .titleundertext1 {
-    font-size: x-large !important;
-  }
-  
-  .waterloo {
-    font-size: large !important;
     font-weight: bold !important;
-    color: rgb(0, 0, 0);
+    font-size: x-large ;
   }
+  
+ 
+  
+
   
   .backgroundaboutme {
     background: linear-gradient(#131862, #2e4482);
