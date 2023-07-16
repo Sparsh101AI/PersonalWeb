@@ -29,7 +29,7 @@ export const Projects = () => {
       title: "NLP Semantle Golf Game",
       description: "#T-SNE",
       imageSrc: "golf.png", // Initial image URL
-      selectedImage: "focus.png", // Selected image URL
+      selectedImage: "golf1.png", // Selected image URL
       technologies: ["Python", "React"],
       url: "https://project1.com",
     },
@@ -43,11 +43,12 @@ export const Projects = () => {
     },
     {
       id: 4,
-      title: "Project 4",
-      description: "Description of Project 4",
-      imageSrc: "project4.png",
-      technologies: ["Java"],
-      url: "https://project4.com"
+      title: "StreamedD Glossary",
+      description: "#Anime Engine",
+      imageSrc: "stream1.png", // Initial image URL
+      selectedImage: "stream.png", // Selected image URL
+      technologies: ["Node.Js", "React", "Docker"],
+      url: "https://project1.com",
     },
   
     // Add more projects as needed
@@ -68,7 +69,6 @@ export const Projects = () => {
     );
   });
 
-  const visibleProjects = filteredProjects.slice(0, 4);
 
   return (
     <section className="project" id="project">
