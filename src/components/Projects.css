@@ -1,117 +1,124 @@
 .project-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80%; /* Adjust the height as desired */
-    margin: 10px;
-    background-color: #152F5F;
-    color: #ffffff;
-    transition: background-color 0.3s ease-in-out;
-    cursor: pointer;
-    width: calc(50% - 20px); /* Double the width and adjust spacing */
-    overflow: hidden;
-    border-radius: 10px; /* Make the edges rounded */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow for visibility */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%; /* Adjust the height as desired */
+  margin: 10px;
+  margin-bottom: 20px; /* Add margin-bottom to create a gap between cards */
+  background-color: #152F5F;
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+  width: calc(50% - 20px); /* Double the width and adjust spacing */
+  overflow: hidden;
+  border-radius: 20px; /* Make the edges rounder */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow for visibility */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  background-color: #FFE5B4;
+  color: #FFE5B4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Rest of the CSS remains the same */
+
+
+@media (max-width: 576px) {
+  .project-card {
+    flex-direction: row;
+    align-items: flex-start;
+    width: calc(100% - 20px); /* Adjust the width for smaller screens */
   }
-  
-  .project-card:hover {
-    background-color: #2156b1;
-    color: #FFE5B4;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase the box shadow on hover */
-  }
-  
-  @media (max-width: 576px) {
-    .project-card {
-      width: calc(100% - 20px); /* Adjust the width for smaller screens */
-    }
-  }
-  
-  
-  
+
   .project-card-image {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
   }
-  
+
   .project-card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
-  
-  .project-card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .project-card-body h5 {
-    margin-bottom: 10px;
-  }
-  
-  .project-card-body p {
-    margin-bottom: 20px;
-  }
-  
-  .project-card-body a {
-    display: inline-block;
-    margin-top: 10px;
-  }
-  
-  .project-card-body a img {
-    width: 50%; /* Reduce the size of the GitHub button by half */
-  }
-  
-  @media (max-width: 576px) {
-    .project-card {
-      flex-direction: row;
-      align-items: flex-start;
-      width: calc(100% - 20px); /* Adjust the width for smaller screens */
-    }
-  
-    .project-card-image {
-      width: 120px;
-      height: 120px;
-      margin-right: 20px;
-    }
-  
-    .project-card-image img {
-      object-fit: contain;
-    }
-  }
-  
-  .rounded-input-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .rounded-input {
-    padding: 5px;
-    border-radius: 30px;
-    border: none;
-    background: #ffffff;
-    color: black;
-    width: 650px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .rounded-input:focus {
-    outline: none;
-    background: #152F5F;
-    color: white;
-  }
-  
-  .centered-search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
+}
+
+.project-card-image {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card-body h5 {
+  margin-bottom: 10px;
+}
+
+.project-card-body p {
+  margin-bottom: 20px;
+}
+
+.project-card-body a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project-card-body a img {
+  width: 50%; /* Reduce the size of the GitHub button by half */
+}
+
+.rounded-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rounded-input {
+  padding: 5px;
+  border-radius: 30px;
+  border: none;
+  background: #ffffff;
+  color: black;
+  width: 650px;
+  height: 60px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add color transition */
+  text-align: center; /* Add text-align center */
+}
+
+.rounded-input:focus {
+  outline: none;
+  background: #FFE5B4; /* Change background color on focus */
+  color: #152F5F; /* Change text color on focus */
+}
+
+.centered-search-bar {
+  display: flex;
+  padding: 5px;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 60%;
+  text-align: center !important;
+  height: 50px;
+}
+
+.no-projects-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #152F5F;
+}
