@@ -80,7 +80,7 @@ export const Projects = () => {
             <div className="centered-search-bar">
               <input
                 type="text"
-                placeholder="Search by technology..."
+                placeholder="Filter by technology..."
                 value={searchTerm}
                 onChange={handleSearch}
                 className="rounded-input"

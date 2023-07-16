@@ -1,14 +1,11 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import './Footer.css';
-import { SocialIcon } from 'react-social-icons';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'; // Import the Font Awesome icons
+
 
 export const Footer = () => {
-  const email = 'Sparshpatel6165@gmail.com';
+ 
 
-  const handleEmailButtonClick = () => {
-    window.location.href = `https://mail.google.com/mail/?view=cm&to=${email}`;
-  };
+
 
   return (
     <footer className="footer" id="footer">
