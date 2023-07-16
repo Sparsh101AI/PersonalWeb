@@ -1,7 +1,117 @@
-.bton{
+.project-card {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-self: center;
     align-items: center;
+    height: 80%; /* Adjust the height as desired */
+    margin: 10px;
+    background-color: #152F5F;
+    color: #ffffff;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    width: calc(50% - 20px); /* Double the width and adjust spacing */
+    overflow: hidden;
+    border-radius: 10px; /* Make the edges rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow for visibility */
+  }
+  
+  .project-card:hover {
+    background-color: #2156b1;
+    color: #FFE5B4;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase the box shadow on hover */
+  }
+  
+  @media (max-width: 576px) {
+    .project-card {
+      width: calc(100% - 20px); /* Adjust the width for smaller screens */
+    }
+  }
+  
+  
+  
+  .project-card-image {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+  
+  .project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .project-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-card-body h5 {
+    margin-bottom: 10px;
+  }
+  
+  .project-card-body p {
+    margin-bottom: 20px;
+  }
+  
+  .project-card-body a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .project-card-body a img {
+    width: 50%; /* Reduce the size of the GitHub button by half */
+  }
+  
+  @media (max-width: 576px) {
+    .project-card {
+      flex-direction: row;
+      align-items: flex-start;
+      width: calc(100% - 20px); /* Adjust the width for smaller screens */
+    }
+  
+    .project-card-image {
+      width: 120px;
+      height: 120px;
+      margin-right: 20px;
+    }
+  
+    .project-card-image img {
+      object-fit: contain;
+    }
+  }
+  
+  .rounded-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .rounded-input {
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    background: #ffffff;
+    color: black;
+    width: 650px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .rounded-input:focus {
+    outline: none;
+    background: #152F5F;
     color: white;
-    background-color: black;
-}
+  }
+  
+  .centered-search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  

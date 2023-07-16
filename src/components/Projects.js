@@ -1,93 +1,120 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
-
+import { useState } from "react";
+import { Container, Col, Tab, Nav } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import Button from 'react-bootstrap/Button';
+
+import colorSharp2 from "../assets/img/color-sharp2.png";
 import './Projects.css';
 
-
-
 export const Projects = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const projects = [
+    {
+      id: 1,
+      title: "Project 1",
+      description: "Description of Project 1",
+      imageSrc: "project1.png",
+      technologies: ["C++"],
+      url: "https://project1.com"
+    },
+    {
+      id: 2,
+      title: "Project 2",
+      description: "Description of Project 2",
+      imageSrc: "project2.png",
+      technologies: ["JavaScript", "React"],
+      url: "https://project2.com"
+    },
+    {
+      id: 3,
+      title: "Project 3",
+      description: "Description of Project 3",
+      imageSrc: "project3.png",
+      technologies: ["Python", "Django"],
+      url: "https://project3.com"
+    },
+    {
+      id: 4,
+      title: "Project 4",
+      description: "Description of Project 4",
+      imageSrc: "project4.png",
+      technologies: ["Java"],
+      url: "https://project4.com"
+    },
+    // Add more projects as needed
+  ];
+
+  const filteredProjects = projects.filter((project) => {
+    const projectDescription = project.description.toLowerCase();
+    const projectTitle = project.title.toLowerCase();
+    const searchTermLowerCase = searchTerm.toLowerCase();
+
+    return (
+      projectDescription.includes(searchTermLowerCase) ||
+      projectTitle.includes(searchTermLowerCase) ||
+      project.technologies.some((technology) =>
+        technology.toLowerCase().includes(searchTermLowerCase)
+      )
+    );
+  });
+
+  const visibleProjects = filteredProjects.slice(0, 4);
+
   return (
     <section className="project" id="project">
       <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Below are some of my highlighted projects, simply click on the pictire to learn more. The rest can be found on github.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    
-                    {/* <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item> */}
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                      <CardGroup>
-      <Card className="bton">
-      <Card.Text>
-            FOCUS: Brain Sensing Headband
-          </Card.Text>
-        <Card.Img variant="top" src="focus.jpeg" />
-        <Card.Body>
-          <Button type="button"
-      onClick={() => {
-        window.open("https://projectboard.world/ysc/project/focus---an-eeg-powered-brain-sensing-headband-for-accident-prevention", "_blank");
-      }}> Learn More!</Button>
-        </Card.Body>
-       
-      </Card>
-      <Card className="bton">
-      <Card.Text>
-      Physics Calculator Application          </Card.Text>
-        <Card.Img variant="top" src="physics.jpeg" />
-        <Card.Body>
-          <Button type="button"
-      onClick={() => {
-        window.open("https://phsyics-priend-453c9c.netlify.app/", "_blank");
-      }}> Try it Out!</Button>
-        </Card.Body>
-       
-      </Card>
-      <Card className="bton">
-      <Card.Text>
-      Semantle Golf Game          </Card.Text>
-        <Card.Img variant="top" src="semantle.png" />
-        <Card.Body>
-          <Button type="button"
-      onClick={() => {
-        window.open("https://github.com/Sparsh101AI/Semantle-golf-game", "_blank");
-      }}> Learn More!</Button>
-        </Card.Body>
-       
-      </Card>
-    </CardGroup>
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
+        <Col>
+          <h2>Projects</h2>
+          <p>Below are some of my highlighted projects, some cant been seen until filtered.</p>
+          <div className="rounded-input-container">
+            <div className="centered-search-bar">
+              <input
+                type="text"
+                placeholder="Search by technology..."
+                value={searchTerm}
+                onChange={handleSearch}
+                className="rounded-input"
+              />
+            </div>
+          </div>
+          <Tab.Container id="projects-tabs" defaultActiveKey="first">
+            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+              {/* Add tabs if needed */}
+            </Nav>
+            <Tab.Content>
+              <Tab.Pane eventKey="first">
+                <CardGroup className="d-flex justify-content-center">
+                  {visibleProjects.map((project) => (
+                    <Card key={project.id} className="project-card" onClick={() => window.open(project.url, "_blank")}>
+                      <div className="project-card-image">
+                        <img src={project.imageSrc} alt={project.title} />
+                      </div>
+                      <div className="project-card-body">
+                        <h5>{project.title}</h5>
+                        <p>{project.description}</p>
+                        <a href={project.url} target="_blank" rel="noopener noreferrer">
+                          <img src="github.png" alt="GitHub" />
+                        </a>
+                      </div>
+                    </Card>
+                  ))}
+                </CardGroup>
+                {filteredProjects.length > 4 && (
+                  <div>
+                    <p>More projects available. Refine your search to see additional projects.</p>
+                  </div>
+                )}
+              </Tab.Pane>
+            </Tab.Content>
+          </Tab.Container>
+        </Col>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt=""></img>
+      <img className="background-image-right" src={colorSharp2} alt="" />
     </section>
-    
   );
-}
+};
