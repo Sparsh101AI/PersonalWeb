@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <Banner />
       <Aboutme />
-      <Skills/>
+
       <Projects />
       <Myjourney />
       <Footer />
