@@ -21,9 +21,9 @@ export const Projects = () => {
       imageSrc: "focus1.png", // Initial image URL
       selectedImage: "focus.png", // Selected image URL
       technologies: ["C++", "Matlab", "Python", "Arduino", "React"],
-      url: "https://project1.com",
+      url: "https://github.com/Sparsh101AI/EEG-BrainSensing-Headband-Project-Source-Code",
     },
-    
+
     {
       id: 2,
       title: "NLP Semantle Golf Game",
@@ -50,7 +50,7 @@ export const Projects = () => {
       technologies: ["Node.Js", "React", "Docker"],
       url: "https://project1.com",
     },
-  
+
     // Add more projects as needed
   ];
 
@@ -88,71 +88,71 @@ export const Projects = () => {
             </div>
           </div>
           <Tab.Container id="projects-tabs" defaultActiveKey="first">
-            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
               {/* Add tabs if needed */}
             </Nav>
             <Tab.Content>
               <Tab.Pane eventKey="first">
                 <CardGroup className="d-flex justify-content-center">
                   {filteredProjects.length > 0 ? (
-  <CardGroup className="d-flex justify-content-center flex-wrap">
-   {filteredProjects.length > 0 ? (
-  <CardGroup className="d-flex justify-content-start flex-wrap">
-    {projects.map((project) => {
-      if (
-        filteredProjects.find(
-          (filteredProject) => filteredProject.id === project.id
-        )
-      ) {
-        return (
-          <Card
-  key={project.id}
-  className="project-card"
-  onClick={() => window.open(project.url, "_blank")}
->
-  <div className="project-card-image">
-    <img src={project.imageSrc} alt={project.title} />
-  </div>
-  <div className="project-card-body">
-    <h5>{project.title}</h5>
-    <p>{project.description}</p>
-    <div className="circle-image">
-      <img className="focus-image" src={project.selectedImage} alt="Focus" />
-    </div>
-  </div>
-</Card>
+                    <CardGroup className="d-flex justify-content-center flex-wrap">
+                      {filteredProjects.length > 0 ? (
+                        <CardGroup className="d-flex justify-content-start flex-wrap">
+                          {projects.map((project) => {
+                            if (
+                              filteredProjects.find(
+                                (filteredProject) => filteredProject.id === project.id
+                              )
+                            ) {
+                              return (
+                                <Card
+                                  key={project.id}
+                                  className="project-card"
+                                  onClick={() => window.open(project.url, "_blank")}
+                                >
+                                  <div className="project-card-image">
+                                    <img src={project.imageSrc} alt={project.title} />
+                                  </div>
+                                  <div className="project-card-body">
+                                    <h5>{project.title}</h5>
+                                    <p>{project.description}</p>
+                                    <div className="circle-image">
+                                      <img className="focus-image" src={project.selectedImage} alt="Focus" />
+                                    </div>
+                                  </div>
+                                </Card>
 
 
-        );
-      }
-      return null;
-    })}
-  </CardGroup>
-) : (
-  <div className="no-projects-message">
-    <p>No projects found.</p>
-  </div>
-)}
+                              );
+                            }
+                            return null;
+                          })}
+                        </CardGroup>
+                      ) : (
+                        <div className="no-projects-message">
+                          <p>No projects found.</p>
+                        </div>
+                      )}
 
 
 
 
 
-  </CardGroup>
-) : (
-  <div className="no-projects-message">
-    <p>No projects found.</p>
-  </div>
-)}
+                    </CardGroup>
+                  ) : (
+                    <div className="no-projects-message">
+                      <p>No projects found.</p>
+                    </div>
+                  )}
 
                 </CardGroup>
                 <br></br>
-               
+
               </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
         </Col>
-        
+
       </Container>
       <img className="background-image-right" src={colorSharp2} alt="" />
     </section>
