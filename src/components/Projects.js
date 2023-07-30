@@ -20,7 +20,7 @@ export const Projects = () => {
       description: "#Brainwaves",
       imageSrc: "focus1.png", // Initial image URL
       selectedImage: "focus.png", // Selected image URL
-      technologies: ["C++", "Matlab", "Python", "Arduino", "React"],
+      technologies: ["C++", "Matlab", "Python", "Arduino", "React", "Node.Js"],
       url: "https://github.com/Sparsh101AI/EEG-BrainSensing-Headband-Project-Source-Code",
     },
 
@@ -30,8 +30,8 @@ export const Projects = () => {
       description: "#T-SNE",
       imageSrc: "golf.png", // Initial image URL
       selectedImage: "golf1.png", // Selected image URL
-      technologies: ["Python", "React"],
-      url: "https://project1.com",
+      technologies: ["Python", "React", "C++", "Node.Js"],
+      url: "https://github.com/Sparsh101AI/NLP-Semantle-golf-game",
     },
     {
       id: 3,
@@ -47,8 +47,8 @@ export const Projects = () => {
       description: "#Anime Engine",
       imageSrc: "stream1.png", // Initial image URL
       selectedImage: "stream.png", // Selected image URL
-      technologies: ["Node.Js", "React", "Docker"],
-      url: "https://project1.com",
+      technologies: ["Node.Js", "React", "Docker", "Python"],
+      url: "https://streamdanime.io/",
     },
 
     // Add more projects as needed
@@ -88,7 +88,7 @@ export const Projects = () => {
             </div>
           </div>
           <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
               {/* Add tabs if needed */}
             </Nav>
             <Tab.Content>
