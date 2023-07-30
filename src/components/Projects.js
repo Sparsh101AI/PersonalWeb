@@ -30,16 +30,17 @@ export const Projects = () => {
       description: "#T-SNE",
       imageSrc: "golf.png", // Initial image URL
       selectedImage: "golf1.png", // Selected image URL
-      technologies: ["Python", "React", "C++", "Node.Js"],
+      technologies: ["Python", "C++", "Node.Js"],
       url: "https://github.com/Sparsh101AI/NLP-Semantle-golf-game",
     },
     {
       id: 3,
-      title: "Project 3",
-      description: "Description of Project 3",
-      imageSrc: "project3.png",
-      technologies: ["Python", "Django"],
-      url: "https://project3.com"
+      title: "AI Reccomendation Chrome Extension",
+      description: "#AI",
+      imageSrc: "momento.png",
+      selectedImage: "emom.png", // Selected image URL
+      technologies: ["Python", "Django", "React.js",],
+      url: "https://chrome.google.com/webstore/detail/momento-ai/acjnnhfkignjgnnkeiejbkippinnfcnh"
     },
     {
       id: 4,
@@ -47,7 +48,7 @@ export const Projects = () => {
       description: "#Anime Engine",
       imageSrc: "stream1.png", // Initial image URL
       selectedImage: "stream.png", // Selected image URL
-      technologies: ["Node.Js", "React", "Docker", "Python"],
+      technologies: ["Node.Js", "React", "Docker",],
       url: "https://streamdanime.io/",
     },
 
@@ -75,7 +76,7 @@ export const Projects = () => {
       <Container>
         <Col>
           <h2>Projects</h2>
-          <p>Below are some of my highlighted projects, I think they are pretty awesome.</p>
+          <p>Below are some of my highlighted projects,  they are pretty awesome.</p>
           <div className="rounded-input-container">
             <div className="centered-search-bar">
               <input
