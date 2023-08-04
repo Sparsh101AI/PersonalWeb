@@ -76,7 +76,7 @@ export const Projects = () => {
       <Container>
         <Col>
           <h2>Projects</h2>
-          <p>Below are some of my highlighted projects,  they are pretty awesome.</p>
+          <p>Below are some of my highlighted projects, the rest are on <a href="https://github.com/Sparsh101AI?tab=overview&from=2023-08-01&to=2023-08-04" >GitHub</a>.</p>
           <div className="rounded-input-container">
             <div className="centered-search-bar">
               <input
