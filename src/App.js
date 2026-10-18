@@ -1,23 +1,31 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
+import { Nav } from "./components/Nav";
+import { Hero } from "./components/Hero";
+import { About } from "./components/About";
+import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
-import { Myjourney } from "./components/Myjourney";
-import { Footer } from "./components/Footer";
-import { Aboutme } from "./components/Aboutme";
-function App() {
+import { Places } from "./components/Places";
+import { Hobbies } from "./components/Hobbies";
+import { Skills } from "./components/Skills";
+import { Contact } from "./components/Contact";
+import { Chat } from "./components/chat/Chat";
+import { useReveal } from "./hooks/useReveal";
+
+export default function App() {
+  useReveal();
   return (
-    <div className="App">
-      <NavBar />
-      <Banner />
-      <Aboutme />
-
-      <Projects />
-      <Myjourney />
-      <Footer />
-    </div>
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Places />
+        <Hobbies />
+        <Skills />
+      </main>
+      <Contact />
+      <Chat />
+    </>
   );
-} // remove <skills>
-
-export default App;
+}

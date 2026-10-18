@@ -1,0 +1,100 @@
+/* The hero wallpaper with twinkling stars and a glowing streetlamp layered on top. */
+
+.scene { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.scene__art { position: absolute; }
+.scene__img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; user-select: none; }
+.sky, .lamp { position: absolute; inset: 0; pointer-events: none; }
+
+/* stars */
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 4px 1px rgba(220, 235, 255, 0.9), 0 0 10px 2px rgba(160, 200, 255, 0.45);
+  animation: twinkle 4s ease-in-out infinite;
+}
+.star--sparkle::before, .star--sparkle::after {
+  content: ""; position: absolute; left: 50%; top: 50%;
+  background: linear-gradient(90deg, transparent, rgba(230, 240, 255, 0.9), transparent);
+  width: 14px; height: 1px; transform: translate(-50%, -50%);
+}
+.star--sparkle::after { transform: translate(-50%, -50%) rotate(90deg); }
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; transform: translate(-50%, -50%) scale(0.7); }
+  45% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  60% { opacity: 0.8; }
+}
+
+.shooting {
+  position: absolute; left: 44%; top: 4%;
+  width: 120px; height: 1.5px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(180, 210, 255, 0));
+  transform: rotate(18deg);
+  transform-origin: left center;
+  opacity: 0;
+  animation: shoot 11s ease-out infinite 3s;
+}
+@keyframes shoot {
+  0%, 88% { opacity: 0; translate: 0 0; }
+  89% { opacity: 1; }
+  96% { opacity: 0; translate: 22vw 7vw; }
+  100% { opacity: 0; translate: 22vw 7vw; }
+}
+
+/* streetlamp: the lamp head sits at ~52.6% / 19% of the image */
+.lamp__bulb {
+  position: absolute; left: 52.6%; top: 19%;
+  width: 2.2%; height: 0.9%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #fff8e6;
+  box-shadow: 0 0 12px 4px rgba(255, 240, 200, 0.95);
+  animation: lamp-flicker 9s infinite;
+}
+.lamp__halo {
+  position: absolute; left: 52.6%; top: 19%;
+  width: 22%; aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 236, 190, 0.55), rgba(255, 220, 160, 0.18) 45%, transparent 72%);
+  mix-blend-mode: screen;
+  animation: lamp-breathe 5s ease-in-out infinite, lamp-flicker 9s infinite;
+}
+.lamp__cone {
+  position: absolute; left: 40%; top: 19.5%;
+  width: 40%; height: 62%;
+  clip-path: polygon(30% 0, 34.5% 0, 100% 100%, 0 100%);
+  background: linear-gradient(180deg, rgba(255, 238, 200, 0.30) 0%, rgba(255, 230, 180, 0.11) 45%, rgba(255, 225, 170, 0) 100%);
+  mix-blend-mode: screen;
+  filter: blur(10px);
+  animation: lamp-breathe 5s ease-in-out infinite, lamp-flicker-blur 9s infinite;
+}
+.lamp__pool {
+  position: absolute; left: 51%; top: 84%;
+  width: 34%; height: 10%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 232, 185, 0.3), transparent);
+  mix-blend-mode: screen;
+  animation: lamp-breathe 5s ease-in-out infinite, lamp-flicker 9s infinite;
+}
+@keyframes lamp-breathe {
+  0%, 100% { opacity: 0.78; }
+  50% { opacity: 1; }
+}
+@keyframes lamp-flicker {
+  0%, 61%, 63.5%, 66%, 100% { filter: brightness(1); }
+  62% { filter: brightness(0.45); }
+  65% { filter: brightness(0.7); }
+}
+@keyframes lamp-flicker-blur {
+  0%, 61%, 63.5%, 66%, 100% { filter: blur(10px) brightness(1); }
+  62% { filter: blur(10px) brightness(0.45); }
+  65% { filter: blur(10px) brightness(0.7); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star, .shooting, .lamp span { animation: none !important; }
+  .shooting { display: none; }
+}

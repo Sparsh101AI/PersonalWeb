@@ -1,0 +1,31 @@
+.places { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
+.places__globe { position: relative; aspect-ratio: 1; width: 100%; max-width: 600px; justify-self: center; }
+.places__info { min-width: 0; } /* lets the photo strip scroll instead of widening the column */
+.places__hint { position: absolute; bottom: 4%; left: 50%; transform: translateX(-50%); font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); pointer-events: none; }
+.places__list { margin-top: 28px; display: grid; gap: 22px; }
+.places__group h3 { font-family: var(--mono); font-size: 12.5px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lamp); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.places__group h3::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--lamp); box-shadow: 0 0 10px var(--lamp); }
+.places__group { min-width: 0; }
+.places__group > ul { display: grid; gap: 6px; min-width: 0; }
+.places__group > ul > li { min-width: 0; }
+.place {
+  width: 100%; text-align: left; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+  padding: 8px 14px; border-radius: 10px;
+  background: transparent; border: 1px solid transparent; color: var(--ink); font: inherit;
+  transition: background 0.2s, border-color 0.2s;
+}
+.place:hover, .place.is-active { background: var(--panel); border-color: var(--line); }
+.place__name { font-weight: 600; font-size: 15.5px; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
+.place__camera { font-size: 14px; color: var(--lamp); }
+.place.is-selected { border-color: rgba(246, 193, 119, 0.45); }
+.place__note { color: var(--muted); font-size: 14px; text-align: right; }
+
+@media (max-width: 900px) {
+  .places { grid-template-columns: 1fr; gap: 32px; }
+  .places__globe { max-width: 480px; }
+}
+@media (max-width: 720px) {
+  .place { flex-direction: column; gap: 2px; }
+  .place__note { text-align: left; }
+}

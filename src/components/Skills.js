@@ -1,23 +1,34 @@
-import './Footer.css';
+import { skills, awards } from "../content";
+import "./Skills.css";
 
-
-export const Skills = () => {
-
-
-
-    return (
-        <section className="skill" id="skills">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="skill-bx wow zoomIn">
-                            <h2>Thoughts Garden</h2>
-                            <p>🚧This page is currently under construction. Stay tuned for updates on some intresting things.🚧</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+export function Skills() {
+  return (
+    <section className="section section--tight">
+      <div className="wrap skills-grid">
+        <div className="reveal">
+          <p className="eyebrow">Toolkit</p>
+          <div className="skills">
+            {skills.map((s) => (
+              <div key={s.group} className="skills__row">
+                <h3>{s.group}</h3>
+                <ul className="tags tags--plain">
+                  {s.items.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="reveal">
+          <p className="eyebrow">Recognition</p>
+          <ul className="awards">
+            {awards.map((a) => (
+              <li key={a}>{a}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
 }

@@ -1,124 +1,16 @@
-.project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80%; /* Adjust the height as desired */
-  margin: 10px;
-  margin-bottom: 20px; /* Add margin-bottom to create a gap between cards */
-  background-color: #152F5F;
-  color: #ffffff;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  cursor: pointer;
-  width: calc(50% - 20px); /* Double the width and adjust spacing */
-  overflow: hidden;
-  border-radius: 20px; /* Make the edges rounder */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow for visibility */
+#projects { background: linear-gradient(180deg, var(--night) 0%, var(--night-2) 50%, var(--night) 100%); }
+.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.project { padding: 28px; display: flex; flex-direction: column; transition: border-color 0.25s, transform 0.25s, background 0.25s; }
+.project p { color: var(--muted); margin-top: 12px; font-size: 16px; flex: 1; }
+.project__top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.project h3 { font-family: var(--display); font-size: 21px; font-weight: 600; letter-spacing: -0.01em; }
+.project__arrow { flex: none; font-size: 22px; color: var(--faint); transition: color 0.25s, transform 0.25s; }
+.project--link:hover { border-color: rgba(246, 193, 119, 0.45); transform: translateY(-4px); background: rgba(24, 44, 76, 0.7); }
+.project--link:hover .project__arrow { color: var(--lamp); transform: translate(3px, -3px); }
+
+@media (max-width: 900px) {
+  .projects { grid-template-columns: 1fr; }
 }
-
-.project-card:hover {
-  transform: scale(1.05);
-  background-color: #FFE5B4;
-  color: #FFE5B4;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-/* Rest of the CSS remains the same */
-
-
-@media (max-width: 576px) {
-  .project-card {
-    flex-direction: row;
-    align-items: flex-start;
-    width: calc(100% - 20px); /* Adjust the width for smaller screens */
-  }
-
-  .project-card-image {
-    width: 120px;
-    height: 120px;
-    margin-right: 20px;
-  }
-
-  .project-card-image img {
-    object-fit: contain;
-  }
-}
-
-.project-card-image {
-  position: relative;
-  width: 100%;
-  height: 50%;
-  overflow: hidden;
-}
-
-.project-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.project-card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-}
-
-.project-card-body h5 {
-  margin-bottom: 10px;
-}
-
-.project-card-body p {
-  margin-bottom: 20px;
-}
-
-.project-card-body a {
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.project-card-body a img {
-  width: 50%; /* Reduce the size of the GitHub button by half */
-}
-
-.rounded-input-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.rounded-input {
-  padding: 5px;
-  border-radius: 30px;
-  border: none;
-  background: #ffffff;
-  color: black;
-  width: 650px;
-  height: 60px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add color transition */
-  text-align: center; /* Add text-align center */
-}
-
-.rounded-input:focus {
-  outline: none;
-  background: #FFE5B4; /* Change background color on focus */
-  color: #152F5F; /* Change text color on focus */
-}
-
-.centered-search-bar {
-  display: flex;
-  padding: 5px;
-  justify-content: center !important;
-  align-items: center !important;
-  font-size: 60%;
-  text-align: center !important;
-  height: 50px;
-}
-
-.no-projects-message {
-  text-align: center;
-  margin-top: 20px;
-  color: #152F5F;
+@media (max-width: 720px) {
+  .project { padding: 22px 20px; }
 }

@@ -1,0 +1,19 @@
+/* Design tokens. Colours are sampled from the night-street wallpaper. */
+:root {
+  --night: #0a1628;
+  --night-2: #0e1d34;
+  --panel: rgba(20, 38, 66, 0.55);
+  --panel-solid: #12233d;
+  --line: rgba(160, 190, 230, 0.14);
+  --line-strong: rgba(160, 190, 230, 0.28);
+  --ink: #e9eef7;
+  --muted: #9aabc6;
+  --faint: #6d7f9c;
+  --lamp: #f6c177;
+  --lamp-soft: rgba(246, 193, 119, 0.14);
+  --sky: #8fb6f0;
+  --radius: 16px;
+  --display: "Space Grotesk", system-ui, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}

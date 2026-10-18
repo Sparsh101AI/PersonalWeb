@@ -1,0 +1,11 @@
+.skills-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 64px; }
+.skills { display: grid; gap: 22px; }
+.skills__row h3 { font-size: 14px; font-weight: 600; color: var(--muted); }
+.skills__row .tags { margin-top: 10px; }
+.awards { display: grid; gap: 14px; }
+.awards li { position: relative; padding-left: 26px; color: #cdd7e7; font-size: 16px; }
+.awards li::before { content: "✦"; position: absolute; left: 0; color: var(--lamp); font-size: 13px; top: 2px; }
+
+@media (max-width: 900px) {
+  .skills-grid { grid-template-columns: 1fr; gap: 48px; }
+}

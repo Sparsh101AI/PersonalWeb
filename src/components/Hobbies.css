@@ -1,0 +1,16 @@
+.hobbies { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.hobby { padding: 26px 24px; transition: border-color 0.25s, transform 0.25s; }
+.hobby:hover { border-color: var(--line-strong); transform: translateY(-3px); }
+.hobby__icon {
+  width: 46px; height: 46px; border-radius: 12px;
+  display: grid; place-items: center;
+  background: var(--lamp-soft); color: var(--lamp); font-size: 21px;
+  margin-bottom: 16px;
+}
+.hobby h3 { font-family: var(--display); font-size: 20px; font-weight: 600; letter-spacing: -0.01em; }
+.hobby p { color: var(--muted); font-size: 15.5px; margin-top: 8px; }
+
+@media (max-width: 900px) {
+  .hobbies { grid-template-columns: 1fr; gap: 14px; }
+  .hobby { padding: 20px; }
+}
