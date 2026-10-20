@@ -52,15 +52,4 @@ export const experience = [
     ],
     stack: ["Go", "React", "MySQL"],
   },
-  {
-    company: "University of Alberta",
-    role: "Research Intern",
-    team: "NLP",
-    dates: "2022",
-    location: "Edmonton, AB",
-    points: [
-      "Built Golfmantle, a word-embedding game: Word2Vec on a text corpus, t-SNE to project 200 dimensions down to a 2D course, and a JavaScript front end on top.",
-    ],
-    stack: ["Python", "Word2Vec", "t-SNE", "JavaScript"],
-  },
 ];

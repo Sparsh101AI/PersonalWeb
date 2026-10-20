@@ -4,9 +4,9 @@ export const projects = [
   {
     title: "Cost-Efficient AI Gateway",
     blurb:
-      "A gateway that orchestrates LLM requests with model routing, rate limiting and automatic fallback, cutting inference costs by 35%. Includes an observability pipeline for latency, token use and failures. Code isn't public; happy to walk through the design.",
+      "A gateway that orchestrates LLM requests with model routing, rate limiting and automatic fallback, cutting inference costs by 35%. Includes an observability pipeline for latency, token use and failures.",
     tags: ["Python", "LLM routing", "Rate limiting", "Observability"],
-    link: null,
+    link: "https://github.com/Sparsh101AI/ai-gateway",
   },
   {
     title: "WATStudy",
