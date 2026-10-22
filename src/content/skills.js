@@ -1,8 +1,8 @@
 export const skills = [
   { group: "Languages", items: ["Python", "Go", "TypeScript", "JavaScript", "SQL", "C++", "C", "Java"] },
   { group: "Backend & infra", items: ["REST APIs", "PostgreSQL", "MySQL", "Kafka", "Prometheus", "Docker", "Kubernetes", "Jenkins"] },
-  { group: "AI / ML", items: ["RAG pipelines", "Vector databases", "PyTorch", "LLM observability"] },
-  { group: "Coursework", items: ["Distributed Systems", "Operating Systems", "Networks", "Algorithms"] },
+  { group: "AI / ML", items: ["RAG pipelines", "Vector databases", "LLM observability"] },
+  { group: "Coursework", items: ["C++", "Distributed Systems", "Operating Systems", "Networks", "Algorithms"] },
 ];
 
 export const awards = [

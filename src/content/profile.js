@@ -11,7 +11,7 @@ export const profile = {
   aboutHeading: "A bit about me.",
   about:
     "I'm from Fort McMurray, Alberta, and I've spent most of my life in Canada. These days I'm at the University of Waterloo studying software engineering. I build backend and infrastructure systems that hold up in production: security tooling at Cloudflare, LLM pipelines at Shopify, and engineering tools at Tesla used by thousands of engineers.",
-  email: "sparsh.patel@uwaterloo.ca",
+  email: "s62patel@uwaterloo.ca",
   github: "https://github.com/Sparsh101AI",
   linkedin: "https://www.linkedin.com/in/sparsh-patel-54762b186/",
 };
